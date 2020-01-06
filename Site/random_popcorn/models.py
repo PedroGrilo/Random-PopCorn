@@ -34,8 +34,8 @@ class Movie(models.Model):
 
 class AccountProfile(models.Model):
     user = models.OneToOneField(UserDJ, on_delete=models.CASCADE)
-    locality = models.CharField(max_length=100, default="")
-    # picture = models.ImageField(upload_to='account_image', blank=True)
+    locality = models.CharField(max_length=100, default="", blank=True)
+    picture = models.ImageField(upload_to='account_image', blank=True)
     movies = models.ManyToManyField(Movie, blank=True,related_name='movies')
     watchedMovies = models.ManyToManyField(Movie, blank=True,related_name='watched')
 

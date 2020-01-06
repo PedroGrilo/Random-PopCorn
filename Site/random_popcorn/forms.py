@@ -3,7 +3,7 @@ from django import forms
 from django.contrib.auth.forms import authenticate, get_user_model
 from django_tables2 import tables
 
-from .models import Movie
+from .models import Movie, AccountProfile
 
 User = get_user_model()
 
@@ -64,7 +64,7 @@ class AddMovieTable(tables.Table):
     class Meta:
         model = Movie
         template_name = 'django_tables2/bootstrap-responsive.html'
-        fields = ['id', 'title', 'release_date', 'rating_imdb',]
+        fields = ['id', 'title', 'release_date', 'rating_imdb', ]
         attrs = {"id": "tableMovies"}
 
 
@@ -72,3 +72,9 @@ class MovieForm(BSModalForm):
     class Meta:
         model = Movie
         fields = ['id', 'title', 'release_date', 'rating_imdb', ]
+
+
+class AccountImageForm(forms.ModelForm):
+    class Meta:
+        model = AccountProfile
+        fields = ['picture']

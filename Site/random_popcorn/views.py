@@ -5,13 +5,14 @@ from time import strftime
 from bootstrap_modal_forms.generic import BSModalReadView
 from django.contrib.auth import authenticate, logout
 from django.contrib.auth import login as auth_login
-from django.shortcuts import HttpResponseRedirect, reverse
+from django.http import HttpResponse
+from django.shortcuts import HttpResponseRedirect, reverse, get_object_or_404
 from django.shortcuts import render, redirect
 from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from .forms import UserRegisterForm, UserLoginForm, AddMovieTable
+from .forms import UserRegisterForm, UserLoginForm, AddMovieTable, AccountImageForm
 from .models import Movie, AccountProfile
 from .serializers import MovieSerializer, AccountSerializer
 
@@ -30,12 +31,28 @@ def index(request):
     return render(request, "index.html")
 
 
+def update_user(request):
+    user_profile = AccountProfile.objects.get(user=request.user)
+    if request.method == "POST":
+        update_profile_form = AccountImageForm(data=request.POST, instance=user_profile)
+        if update_profile_form.is_valid():
+            profile = update_profile_form.save(commit=False)
+            if 'picture' in request.FILES:
+                profile.picture = request.FILES['picture']
+            profile.save()
+        else:
+            print(update_profile_form.errors)
+    else:
+        update_profile_form = AccountImageForm(instance=user_profile)
+
+    return HttpResponseRedirect(reverse('profile', kwargs={'user_id': request.user.id}))
+
+
 def account_profile(request, user_id):
     accountInfo = AccountProfile.objects.get(pk=user_id)
     movieTable = AddMovieTable(Movie.objects.all())
     movieCount = accountInfo.movies.count()
     watchedMovieCount = accountInfo.watchedMovies.count()
-
     # num_results = accountInfo.watchedMovies.filter(id=accountInfo.movies.).count()
 
     time = 0
@@ -44,7 +61,9 @@ def account_profile(request, user_id):
         time = time + int(timeMovie.runtime)
 
     context = {'accountInfo': accountInfo, 'movieTable': movieTable,
-               'stats': {'movieCount': movieCount,'watchedMovieCount':watchedMovieCount, 'watch_time': ConvertTime(time)}}
+               'stats': {'movieCount': movieCount,
+                         'watchedMovieCount': watchedMovieCount,
+                         'watch_time': ConvertTime(time)}}
     return render(request, 'user_profile.html', context)
 
 

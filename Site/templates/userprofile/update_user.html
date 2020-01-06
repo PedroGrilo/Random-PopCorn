@@ -1,0 +1,51 @@
+{% load static %}
+<style>
+    /* relevant styles */
+.img__wrap {
+  position: relative;
+  height: 200px;
+  width: 257px;
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
+<div class="row">
+    <div class="col-sm-6">
+  <label for="id_picture" onclick="$('#submitBtn').removeAttr('style')">
+      {% if not accountInfo.picture %}
+        <img  id="image-upload" src="{% static "img/img_avatar.png" %}"  class="image">
+    {% else %}
+        <img id="image-upload" src="{{ accountInfo.picture.url }}" class="image">
+    {% endif %}
+  </label>
+</div>
+<div class="col-sm-6">
+
+<form id="update_user_form" method="POST" action="{% url 'update' %}"
+      enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" style="display: none"  name="picture" accept="image/*" id="id_picture">
+    <br/>
+    <input class="btn btn-success" style="display: none" id="submitBtn" type="SUBMIT" name="submit" value="Update"/>
+</form>
+</div>
+</div>
+

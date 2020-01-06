@@ -17,6 +17,7 @@ urlpatterns = [
     path('account/<int:user_id>/removeMovie/<int:movie_id>/<int:tab>', views.removeMovie, name='removeMovie'),
     path('account/<int:user_id>/addMovie/<int:tab>', views.addMovie, name='addMovie'),
     path('movieInfo/<int:pk>', views.InfoMovie.as_view(), name='infoMovie'),
+    path('account/update', views.update_user, name='update'),
 
     # Rest API
     url(r'^api/movie/random/', views.RandomMovie.as_view(), name='movie_random'),
