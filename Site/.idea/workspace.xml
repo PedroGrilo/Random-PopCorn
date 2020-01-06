@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="40029cbe-8aa0-4a9e-9dd6-5d1ccbec30ed" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Uik55F7q2ExkCktTw9ecai9A1D" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\creep\Desktop\CTESP\2ano\PIS\PROJETO\Site\templates" />
+      <recent name="C:\Users\creep\Desktop\CTESP\2ano\PIS\PROJETO\Site\static\styles\SignUp" />
+      <recent name="C:\Users\creep\Desktop\CTESP\2ano\PIS\PROJETO\Site\static\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\creep\Desktop\CTESP\2ano\PIS\PROJETO\Site\static\img" />
+      <recent name="C:\Users\creep\Desktop\CTESP\2ano\PIS\PROJETO\Site\static\styles" />
+      <recent name="C:\Users\creep\Desktop\CTESP\2ano\PIS\PROJETO\Site\static\scripts" />
+      <recent name="C:\Users\creep\Desktop\CTESP\2ano\PIS\PROJETO\Site\static\~~" />
+      <recent name="C:\Users\creep\Desktop\CTESP\2ano\PIS\PROJETO\Site\static" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Site" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Site" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="Site.settings" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\creep\Desktop\CTESP\2ano\PIS\PROJETO\Site\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="http://127.0.0.1:8000/" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="40029cbe-8aa0-4a9e-9dd6-5d1ccbec30ed" name="Default Changelist" comment="" />
+      <created>1575846616612</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575846616612</updated>
+      <workItem from="1575846627861" duration="158000" />
+      <workItem from="1575847023767" duration="1588000" />
+      <workItem from="1576175119137" duration="357000" />
+      <workItem from="1576186044502" duration="3607000" />
+      <workItem from="1576228005280" duration="4463000" />
+      <workItem from="1576236017620" duration="18338000" />
+      <workItem from="1576324376262" duration="4464000" />
+      <workItem from="1576353557932" duration="2425000" />
+      <workItem from="1576359647477" duration="6706000" />
+      <workItem from="1576406561534" duration="330000" />
+      <workItem from="1576446710491" duration="3204000" />
+      <workItem from="1576449930413" duration="1356000" />
+      <workItem from="1576486428087" duration="3523000" />
+      <workItem from="1576868272048" duration="508000" />
+      <workItem from="1576869048658" duration="13890000" />
+      <workItem from="1577018320853" duration="1626000" />
+      <workItem from="1577021624761" duration="11396000" />
+      <workItem from="1577129070315" duration="3202000" />
+      <workItem from="1577189477852" duration="18682000" />
+      <workItem from="1577381564379" duration="6812000" />
+      <workItem from="1577441653184" duration="1809000" />
+      <workItem from="1577469326233" duration="3720000" />
+      <workItem from="1577473958585" duration="1059000" />
+      <workItem from="1577620104264" duration="323000" />
+      <workItem from="1577624239990" duration="2616000" />
+      <workItem from="1577631066275" duration="9948000" />
+      <workItem from="1577658335490" duration="1801000" />
+      <workItem from="1577725538321" duration="1229000" />
+      <workItem from="1577986670787" duration="2770000" />
+      <workItem from="1577989795688" duration="1746000" />
+      <workItem from="1577991557224" duration="6353000" />
+      <workItem from="1578002649074" duration="5333000" />
+      <workItem from="1578069964088" duration="3635000" />
+      <workItem from="1578073678139" duration="1157000" />
+      <workItem from="1578080461399" duration="6989000" />
+      <workItem from="1578153085067" duration="11386000" />
+      <workItem from="1578182890098" duration="4888000" />
+      <workItem from="1578194558003" duration="1451000" />
+      <workItem from="1578225736593" duration="6705000" />
+      <workItem from="1578242513487" duration="5274000" />
+      <workItem from="1578263076617" duration="4608000" />
+      <workItem from="1578299746987" duration="715000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578092632287">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1578092632287" />
+    <state x="461" y="202" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576325378631">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="461" y="202" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1576325378631" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1577472773370">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577472773370" />
+    <state x="449" y="140" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578073600359">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="140" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1576447589175" />
+    <state x="449" y="140" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1578073600359" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578092112995">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1578092112995" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1577992078440" />
+    <state x="299" y="67" key="DBNavigator.ProjectSettingsDialog" timestamp="1577056029028">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="67" key="DBNavigator.ProjectSettingsDialog/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1577056029028" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1577195940708">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1577195940708" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1576230159055" />
+    <state width="1492" height="248" key="GridCell.Tab.0.bottom" timestamp="1578300462480">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="248" key="GridCell.Tab.0.bottom/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1578268963865" />
+    <state width="1492" height="248" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578300462480" />
+    <state width="1492" height="248" key="GridCell.Tab.0.center" timestamp="1578300462479">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="248" key="GridCell.Tab.0.center/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1578268963865" />
+    <state width="1492" height="248" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578300462479" />
+    <state width="1492" height="248" key="GridCell.Tab.0.left" timestamp="1578300462479">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="248" key="GridCell.Tab.0.left/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1578268963865" />
+    <state width="1492" height="248" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578300462479" />
+    <state width="1492" height="248" key="GridCell.Tab.0.right" timestamp="1578300462479">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="248" key="GridCell.Tab.0.right/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1578268963865" />
+    <state width="1492" height="248" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578300462479" />
+    <state width="1492" height="239" key="GridCell.Tab.1.bottom" timestamp="1577388008849">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="239" key="GridCell.Tab.1.bottom/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1577388008849" />
+    <state width="1493" height="239" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576960716346" />
+    <state width="1492" height="239" key="GridCell.Tab.1.center" timestamp="1577388008848">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="239" key="GridCell.Tab.1.center/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1577388008848" />
+    <state width="1493" height="239" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1576960716345" />
+    <state width="1492" height="239" key="GridCell.Tab.1.left" timestamp="1577388008848">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="239" key="GridCell.Tab.1.left/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1577388008848" />
+    <state width="1493" height="239" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1576960716345" />
+    <state width="1492" height="239" key="GridCell.Tab.1.right" timestamp="1577388008849">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="239" key="GridCell.Tab.1.right/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1577388008849" />
+    <state width="1493" height="239" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1576960716346" />
+    <state width="189" height="537" key="HiddenNamespacesPopup" timestamp="1576960993056">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="189" height="537" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1576960993056" />
+    <state x="277" y="54" key="SettingsEditor" timestamp="1578004314539">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="54" key="SettingsEditor/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1578004314539" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1578090158865">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1578090158865" />
+    <state x="524" y="256" key="cloudConfig.SelfSettingsDialog" timestamp="1577059494089">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="524" y="256" key="cloudConfig.SelfSettingsDialog/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1577059494089" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1577632607030">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1577632607030" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1576325710223" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1578299752281">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1578263084421" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1578299752281" />
+    <state x="453" y="0" width="629" height="824" key="find.popup" timestamp="1576960874880">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="453" y="0" width="629" height="824" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1576960874880" />
+    <state x="510" y="55" key="refactoring.ChangeSignatureDialog" timestamp="1576972233667">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="510" y="55" key="refactoring.ChangeSignatureDialog/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1576972233667" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1578266218000">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1578266218000" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1578073778790" />
+  </component>
+</project>

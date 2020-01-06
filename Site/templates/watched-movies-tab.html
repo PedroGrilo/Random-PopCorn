@@ -1,0 +1,36 @@
+{% load static %}
+
+
+<div class="container">
+    <div>
+        <br>
+        <h4 style="color: #45A29E">Watched movies</h4>
+        <br>
+        <div class="scrolling-wrapper">
+            {% for wMovie in accountInfo.watchedMovies.all %}
+                <div class="line">
+                    <div class="conts">
+                        <button type="button" class="infoWatchedMovie" data-id="{% url 'infoMovie' wMovie.id %}">
+                            <img class="banner-movie-tv" src="{{ wMovie.poster }}"/>
+                        </button>
+                        {% if accountInfo.user.email == user.email %}
+                            <form method="post" action="{% url 'removeMovie' user.id wMovie.id 1 %}">
+                                {% csrf_token %}
+                                <button type="submit" class="btn close" aria-label="Close">
+                                    <span aria-hidden="false">&times;</span>
+                                </button>
+                            </form>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+            {% if accountInfo.user.email == user.email %}
+             {% include "dialog-search-movie.html" with tab=1 %}
+                <div class="line">
+                    <img data-toggle="modal" data-target="#searchModal1" src="{% static "img/Group.png" %}"
+                         alt="searchBack"/>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+<script>
+    function showMore() {
+        let content = $("#plot-text");
+        let btnShowMore = $("#show-more");
+        if (content.hasClass("hideContent")) {
+            content.removeClass("hideContent");
+            btnShowMore.text("Show less")
+        } else {
+            content.addClass("hideContent");
+            btnShowMore.text("Show more")
+        }
+    }
+</script>
+{% load widget_tweaks %}
+<div class="modal-header">
+    <h5 class="modal-title" id="titleRandomModal">{{ movie.title }}</h5>
+    <button type="button" id="close1" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <div id="genre-box">
+        <b>Genres:</b>
+        <span id="genre-text">
+            {% for genre in movie.genre.all %}
+                <span>{{ genre }}</span>
+            {% endfor %}
+        </span>
+    </div>
+    <div id="release-box">
+        <b>Release Date:</b>
+        <span id="release-text">{{ movie.release_date }}</span>
+    </div>
+    <div id="plot-box">
+        <b>Plot:</b>
+        <div class="hideContent" id="plot-text">{{ movie.plot }}</div>
+        <a id="show-more" onclick="showMore()" href="#">Show more</a>
+    </div>
+    <div id="runtime-box">
+        <b>Runtime:</b>
+        <span id="runtime-text">{{ movie.runtime }}</span>
+    </div>
+    <div id="languages-box">
+        <b>Languages:</b>
+        <span id="languages-text">
+              {% for lang in movie.languages.all %}
+                  <span>{{ lang }}</span>
+              {% endfor %}
+        </span>
+    </div>
+    <div id="ratingimdb-box">
+        <b>Rating IMDB:</b>
+        <span id="ratingimdb-text">{{ movie.rating_imdb }}</span>
+    </div>
+
+</div>
+<div class="modal-footer">
+    <button type="button" id="close2" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>

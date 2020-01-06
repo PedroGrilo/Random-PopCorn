@@ -1,0 +1,51 @@
+{% load static %}
+{% block content %}
+    <div class="container" style="text-align: center;padding-top: 75px">
+        <div class="row">
+            <div class="col-sm-4" style="background-color: #ffffff;border-radius: 25px; box-shadow: 2px 2px 10px #1F2833;">
+                <br>
+                <h4 style="color: #45A29E">Total Watch-Time</h4>
+                <br>
+                <ul class="list-unstyled list-inline center stats-list">
+                        <li class="stat-item">
+                            <div class="stat-number">{{ stats.watch_time.month }}</div>
+                            <div>months</div>
+                        </li>
+                    <li class="stat-item">
+                        <div class="stat-number">{{ stats.watch_time.day }}</div>
+                        <div>days</div>
+                    </li>
+                    <li class="stat-item">
+                        <div class="stat-number">{{ stats.watch_time.hour }}</div>
+                        <div>hours</div>
+                    </li>
+                    <li class="stat-item">
+                        <div class="stat-number">{{ stats.watch_time.min }}</div>
+                        <div>min.</div>
+                    </li>
+                </ul>
+                <br>
+            </div>
+            <div class="col-sm-1"> <br></div>
+             <div class="col-sm-3" style="background-color: #ffffff;border-radius: 25px; box-shadow: 2px 2px 10px #1F2833">
+                <br>
+                <h4 style="color: #45A29E">Total My Movies</h4>
+                <br>
+                <a class="stat-number">{{ stats.movieCount }}</a>
+                <div>movies</div>
+                  <br>
+            </div>
+              <div class="col-sm-1"> <br></div>
+            <div class="col-sm-3" style="background-color: #ffffff;border-radius: 25px; box-shadow: 2px 2px 10px #1F2833">
+                <br>
+                <h4 style="color: #45A29E">Total Watched Movies</h4>
+                <br>
+
+                <a class="stat-number">{{ stats.watchedMovieCount }}</a>
+                <div>movies</div>
+ <br>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

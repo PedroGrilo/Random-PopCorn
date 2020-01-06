@@ -1,0 +1,94 @@
+{% include "base.html" %}
+{% load static %}
+{% block content %}
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static "styles/accounts-css/main.css" %}">
+    </head>
+
+
+    <form action="" method="post" autocomplete="off">
+        {% csrf_token %}
+        <div class="limiter">
+            <div class="container-login100" style="background-image: url('{% static 'img/bg-01.jpg' %}');">
+
+                <div class="wrap-login100" style="padding: 3em;">
+                    {% if not user.is_authenticated %}
+                        <div style="text-align: center">
+                            <a class="navbar-brand" href="/">
+                                <img src="{% static "img/logo.png" %}" width="100em" alt="logo">
+                            </a>
+                        </div>
+                        <hr>
+                        <span class="login100-form-title" style="{padding-bottom: 49px;}">
+                            Sign up with your email address
+                        </span>
+                        <br>
+                        {% for error in form.non_field_errors %}
+                            <div class="alert alert-danger">
+                                {{ error|escape }}
+                            </div>
+                        {% endfor %}
+                        <br>
+                        <div class="wrap-input100" style="{margin-bottom: 23px;}">
+                            {{ form.username.label }}
+                            <input class="input100" type="text" name="{{ form.username.html_name }}"
+                                   placeholder="Type your username">
+                            <span class="icon-input" data-symbol="&#xf205;"></span>
+                        </div>
+
+
+                        <div class="wrap-input100" style="{margin-bottom: 23px;}" data-validate="Email is required">
+                            {{ form.email.label }}
+                            <input class="input100" type="email" name="{{ form.email.html_name }}"
+                                   placeholder="Type your email">
+                            <span class="icon-input" data-symbol="&#xf15a;"></span>
+                        </div>
+
+                        <div class="wrap-input100" data-validate="Password is required">
+                            {{ form.password.label }}
+                            <input class="input100" type="password" name="{{ form.password.html_name }}"
+                                   placeholder="Type your password">
+                            <span class="icon-input" data-symbol="&#xf190;"></span>
+                        </div>
+
+                        <div class="wrap-input100" data-validate="Password is required">
+                            Repeat {{ form.password.label }}
+                            <input class="input100" id="repeatPass" name="{{ form.password2.html_name }}"
+                                   type="password" name="reapeatPass"
+                                   placeholder="Repeat your password">
+                            <span class="icon-input" data-symbol="&#xf190;"></span>
+                        </div>
+                        <div class="wrap-input100">
+                            Date of birth
+                            <input class="input100" id="birth_date" type="date" name="{{ form.birth_date.html_name }}"
+                                   placeholder="Birth Date">
+                            <span class="icon-input fa" data-symbol="&#xf204;"></span>
+                        </div>
+                        <div style="padding-top: 2em;padding-bottom: 2em">
+                            <input class="checkbox-inline" type="checkbox"> I agree to the <i>Popcorn</i> <a href="#">
+                            terms
+                            & conditions </a> and <a href="#"> Privacy Policy. </a>
+                        </div>
+
+
+                        <div class="container-login100-form-btn">
+                        <div class="wrap-login100-form-btn">
+                            <div class="login100-form-bgbtn"></div>
+                            <button class="login100-form-btn">
+                                Sign up
+                            </button>
+                        </div>
+                        <div style="padding-top: 1em">
+                            Already have an account? <a href="account/login/" style="; padding-left:0.2em">Log in</a>
+                        </div>
+                    {% else %}
+                        User is logged... :(
+                    {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+{% endblock content %}

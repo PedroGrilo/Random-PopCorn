@@ -1,0 +1,62 @@
+{% include "base.html" %}
+{% block content %}
+    <body id="page-top">
+    <!-- NavBar-->
+
+    {% include "navbar.html" %}
+
+    <header class="masthead">
+        <div class="container">
+            <div class="row h-100 justify-content-center text-center">
+                <div class="col-lg-10 align-self-end">
+                    <h2 class="text-uppercase text-white font-weight-bold" style="font-weight: bold;font-size: 40px">
+                        Don't you know what to see?</h2>
+                    <center>
+                        <hr class="divider">
+                    </center>
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <h2 style="font-size: 25px; color: #f3f3f3">Click below to see a random TV Show or Movie</h2>
+                    <br>
+                    <div class="wrap-login100-form-btn" style="width: 45%;">
+                        <div class="login100-form-bgbtn"></div>
+                        <a href="#random" class="login100-form-btn" onclick="getRandomMovie()">
+                            I'm Feeling Lucky
+                        </a>
+                        <a></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+     <div class="modal fade" tabindex="-1" role="dialog" id="modal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content"></div>
+                </div>
+    </div>
+
+    <section class="page-section bg-primary" id="random">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" id="blockRandom" style="visibility: hidden">
+
+
+
+                    <img style="border-radius: 25px" width="200" height="270" id="imgRandom" name="imgRandom"
+                         style=""><br>
+                    <br>
+                    <h3 style="color: #f3f3f3" id="titleRandom" name="titleRandom"></h3>
+                    <br>
+
+                    <button class="btn btn-success">Seen</button>
+                   <div style="color: white">{% include 'dialog-info.html' %}</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    </body>
+
+{% endblock content %}
