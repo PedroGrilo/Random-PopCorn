@@ -31,19 +31,17 @@ def index(request):
     return render(request, "index.html")
 
 
-def update_user(request):
-    user_profile = AccountProfile.objects.get(user=request.user)
+def updatePicture(request):
+    accountProfile = AccountProfile.objects.get(user=request.user)
     if request.method == "POST":
-        update_profile_form = AccountImageForm(data=request.POST, instance=user_profile)
-        if update_profile_form.is_valid():
-            profile = update_profile_form.save(commit=False)
+        imageForm = AccountImageForm(data=request.POST, instance=accountProfile)
+        if imageForm.is_valid():
+            profile = imageForm.save(commit=False)
             if 'picture' in request.FILES:
                 profile.picture = request.FILES['picture']
             profile.save()
-        else:
-            print(update_profile_form.errors)
     else:
-        update_profile_form = AccountImageForm(instance=user_profile)
+        imageForm = AccountImageForm(instance=accountProfile)
 
     return HttpResponseRedirect(reverse('profile', kwargs={'user_id': request.user.id}))
 

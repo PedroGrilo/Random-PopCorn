@@ -25,7 +25,7 @@
                 </div>
             {% endfor %}
             {% if accountInfo.user.email == user.email %}
-             {% include "dialog-search-movie.html" with tab=1 %}
+                {% include "dialog-search-movie.html" with tab=1 %}
                 <div class="line">
                     <img data-toggle="modal" data-target="#searchModal1" src="{% static "img/Group.png" %}"
                          alt="searchBack"/>
