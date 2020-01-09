@@ -154,7 +154,7 @@ html, body {
   }
 }
 
-header.masthead {
+header.banner {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
   background: linear-gradient(to bottom, rgba(30, 90, 92, 0.8) 0%, rgb(56, 62, 92) 100%), url("../img/background.jpg");
@@ -164,27 +164,27 @@ header.masthead {
   background-size: cover;
 }
 
-header.masthead h1 {
+header.banner h1 {
   font-size: 2.25rem;
 }
 
 @media (min-width: 992px) {
-  header.masthead {
+  header.banner {
     height: 100vh;
     min-height: 40rem;
     padding-top: 72px;
     padding-bottom: 0;
   }
-  header.masthead p {
+  header.banner p {
     font-size: 1.15rem;
   }
-  header.masthead h1 {
+  header.banner h1 {
     font-size: 3rem;
   }
 }
 
 @media (min-width: 1200px) {
-  header.masthead h1 {
+  header.banner h1 {
     font-size: 3.5rem;
   }
 }
