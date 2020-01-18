@@ -4,10 +4,8 @@ from time import strftime
 
 from bootstrap_modal_forms.generic import BSModalReadView
 from django.contrib.auth import authenticate, logout
-from django.contrib.auth import login as auth_login
-from django.http import HttpResponse
-from django.shortcuts import HttpResponseRedirect, reverse, get_object_or_404
-from django.shortcuts import render, redirect
+from django.contrib.auth import login as django_login
+from django.shortcuts import HttpResponseRedirect, reverse, render, redirect
 from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -47,22 +45,25 @@ def updatePicture(request):
 
 
 def account_profile(request, user_id):
-    accountInfo = AccountProfile.objects.get(pk=user_id)
-    movieTable = AddMovieTable(Movie.objects.all())
-    movieCount = accountInfo.movies.count()
-    watchedMovieCount = accountInfo.watchedMovies.count()
-    # num_results = accountInfo.watchedMovies.filter(id=accountInfo.movies.).count()
+    try:
+        accountInfo = AccountProfile.objects.get(pk=user_id)
+        movieTable = AddMovieTable(Movie.objects.all())
+        movieCount = accountInfo.movies.count()
+        watchedMovieCount = accountInfo.watchedMovies.count()
+        # num_results = accountInfo.watchedMovies.filter(id=accountInfo.movies.).count()
 
-    time = 0
+        time = 0
 
-    for timeMovie in accountInfo.watchedMovies.all():
-        time = time + int(timeMovie.runtime)
+        for timeMovie in accountInfo.watchedMovies.all():
+            time = time + int(timeMovie.runtime)
 
-    context = {'accountInfo': accountInfo, 'movieTable': movieTable,
-               'stats': {'movieCount': movieCount,
-                         'watchedMovieCount': watchedMovieCount,
-                         'watch_time': ConvertTime(time)}}
-    return render(request, 'user_profile.html', context)
+        context = {'accountInfo': accountInfo, 'movieTable': movieTable,
+                   'stats': {'movieCount': movieCount,
+                             'watchedMovieCount': watchedMovieCount,
+                             'watch_time': ConvertTime(time)}}
+        return render(request, 'user_profile.html', context)
+    except AccountProfile.DoesNotExist:
+        return render(request, "404.html", {'error': 'User not found'})
 
 
 def addMovie(request, user_id, tab):  # 0 - myMovies / 1 - watchedMovies
@@ -105,7 +106,7 @@ def signup_view(request):
             user.set_password(password)
             user.save()
             new_user = authenticate(username=user.username, password=password)
-            auth_login(request, new_user)
+            django_login(request, new_user)
             return redirect('/')
     context = {'form': form}
     return render(request, 'sign_up.html', context)
@@ -118,7 +119,7 @@ def login(request):
             username = form.cleaned_data.get('username')
             password = form.cleaned_data.get('password')
             user = authenticate(username=username, password=password)
-            auth_login(request, user)
+            django_login(request, user)
             return redirect('/')
 
     context = {'form': form}

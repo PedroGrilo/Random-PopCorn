@@ -24,9 +24,10 @@ SECRET_KEY = '($3#$ufv(ol@9#5g6xxbqioogi_q5bor2ylp!sex=2_lb$rb(u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -55,8 +56,6 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
 ]
-
-
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
@@ -145,7 +144,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR,'random_popcorn/media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'random_popcorn/media')
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),

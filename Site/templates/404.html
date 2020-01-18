@@ -1,0 +1,30 @@
+{% include "base.html" %}
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>404 Page</title>
+    <style>
+        body {
+            background: #dedede;
+        }
+
+        .page-wrap {
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrap d-flex flex-row align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="col-md-12 text-center">
+                <img src="{% static "img/logo.png" %}" width="120em">
+                <span class="display-1 d-block">404</span>
+                <div class="mb-4 lead">{{ error }}</div>
+                <a href="{% url 'index' %}" class="btn btn-link">Back to Home</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

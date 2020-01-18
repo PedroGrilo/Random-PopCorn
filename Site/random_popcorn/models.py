@@ -1,4 +1,4 @@
-from django.contrib.auth.models import User as UserDJ, User
+from django.contrib.auth.models import User as UserDJ
 from django.db import models
 from django.db.models.signals import post_save
 
@@ -36,8 +36,8 @@ class AccountProfile(models.Model):
     user = models.OneToOneField(UserDJ, on_delete=models.CASCADE)
     locality = models.CharField(max_length=100, default="", blank=True)
     picture = models.ImageField(upload_to='account_image', blank=True)
-    movies = models.ManyToManyField(Movie, blank=True,related_name='movies')
-    watchedMovies = models.ManyToManyField(Movie, blank=True,related_name='watched')
+    movies = models.ManyToManyField(Movie, blank=True, related_name='movies')
+    watchedMovies = models.ManyToManyField(Movie, blank=True, related_name='watched')
 
     def __str__(self):
         return self.user.email
@@ -45,7 +45,7 @@ class AccountProfile(models.Model):
 
 def create_profile(sender, **kwargs):
     if kwargs['created']:
-        user_profile = AccountProfile.objects.create(user=kwargs['instance'])
+        AccountProfile.objects.create(user=kwargs['instance'])
 
 
-post_save.connect(create_profile, sender=User)
+post_save.connect(create_profile, sender=UserDJ)

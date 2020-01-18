@@ -34,7 +34,7 @@
                         <div class="wrap-input100" style="{margin-bottom: 23px;}" data-validate="Username is required">
                             Username:
                             <input class="input100" type="text" name="{{ form.username.html_name }}"
-                                   placeholder="Type your email">
+                                   placeholder="Type your username">
                             <span class="icon-input" data-symbol="&#xf205;"></span>
                         </div>
 
@@ -54,7 +54,8 @@
                                 </button>
                             </div>
                             <div style="padding-top: 1em">
-                                Don't have an account? <a href="account/signup" style="; padding-left:0.2em">Sign up</a>
+                                Don't have an account? <a href="{% url 'signup' %}" style="; padding-left:0.2em">Sign
+                                up</a>
                             </div>
                         </div>
                     {% else %}

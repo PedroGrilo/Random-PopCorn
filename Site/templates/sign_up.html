@@ -53,7 +53,7 @@
                         <div class="wrap-input100" data-validate="Password is required">
                             Repeat {{ form.password.label }}
                             <input class="input100" id="repeatPass" name="{{ form.password2.html_name }}"
-                                   type="password" name="reapeatPass"
+                                   type="password" name="repeatPass"
                                    placeholder="Repeat your password">
                             <span class="icon-input" data-symbol="&#xf190;"></span>
                         </div>
@@ -78,7 +78,7 @@
                             </button>
                         </div>
                         <div style="padding-top: 1em">
-                            Already have an account? <a href="account/login/" style="; padding-left:0.2em">Log in</a>
+                            Already have an account? <a href="{% url 'login' %}" style="; padding-left:0.2em">Log in</a>
                         </div>
                     {% else %}
                         User is logged... :(
