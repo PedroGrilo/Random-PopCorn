@@ -2,21 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40029cbe-8aa0-4a9e-9dd6-5d1ccbec30ed" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Site/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Site/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Site/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Site/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Site/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Site/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Site/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Site/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/random_popcorn/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/random_popcorn/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_popcorn/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/random_popcorn/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_popcorn/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/random_popcorn/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_popcorn/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/random_popcorn/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_popcorn/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/random_popcorn/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random_popcorn/media/account_image/1908015_859572624084364_9173381373577161774_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/random_popcorn/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/random_popcorn/migrations/0002_remove_accountprofile_picture.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/random_popcorn/migrations/0003_accountprofile_picture.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/random_popcorn/migrations/0004_remove_accountprofile_picture.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/random_popcorn/migrations/0005_auto_20200105_1404.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/random_popcorn/migrations/0006_auto_20200106_1907.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/random_popcorn/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/random_popcorn/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/random_popcorn/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles/accounts-css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dialog-search-movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dialog-search-movie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/movies-tab.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/movies-tab.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/sign_up.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sign_up.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../makeup.studio" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,17 +82,17 @@
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\creep\Desktop\CTESP\2ano\PIS\Projeto-Django\Site\templates" />
-      <recent name="C:\Users\creep\Desktop\CTESP\2ano\PIS\PROJETO\Site\static\img" />
-      <recent name="C:\Users\creep\Desktop\CTESP\2ano\PIS\PROJETO\Site\static\styles" />
-      <recent name="C:\Users\creep\Desktop\CTESP\2ano\PIS\PROJETO\Site\static\scripts" />
-      <recent name="C:\Users\creep\Desktop\CTESP\2ano\PIS\PROJETO\Site\static\~~" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\creep\Desktop\CTESP\2ano\PIS\PROJETO\Site\templates" />
       <recent name="C:\Users\creep\Desktop\CTESP\2ano\PIS\PROJETO\Site\static\styles\SignUp" />
       <recent name="C:\Users\creep\Desktop\CTESP\2ano\PIS\PROJETO\Site\static\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\creep\Desktop\CTESP\2ano\PIS\Projeto-Django\Site\static\styles" />
+      <recent name="C:\Users\creep\Desktop\CTESP\2ano\PIS\Projeto-Django\Site\templates" />
+      <recent name="C:\Users\creep\Desktop\CTESP\2ano\PIS\PROJETO\Site\static\img" />
+      <recent name="C:\Users\creep\Desktop\CTESP\2ano\PIS\PROJETO\Site\static\styles" />
+      <recent name="C:\Users\creep\Desktop\CTESP\2ano\PIS\PROJETO\Site\static\scripts" />
     </key>
   </component>
   <component name="RunManager">
@@ -197,6 +206,12 @@
       <workItem from="1579359700251" duration="3352000" />
       <workItem from="1579363553264" duration="1179000" />
       <workItem from="1579386747789" duration="1295000" />
+      <workItem from="1579388204390" duration="149000" />
+      <workItem from="1579707629958" duration="599000" />
+      <workItem from="1579709430832" duration="617000" />
+      <workItem from="1579721928625" duration="359000" />
+      <workItem from="1579805608807" duration="3397000" />
+      <workItem from="1579809142009" duration="2934000" />
     </task>
     <servers />
   </component>
@@ -217,16 +232,16 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577472773370" />
-    <state x="449" y="140" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578073600359">
+    <state x="449" y="140" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579809085647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="140" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1576447589175" />
-    <state x="449" y="140" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1578073600359" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578610819499">
+    <state x="449" y="140" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1579809085647" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579811112104">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1578610819499" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1577992078440" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1579811112104" />
     <state x="299" y="67" key="DBNavigator.ProjectSettingsDialog" timestamp="1577056029028">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -236,26 +251,26 @@
     </state>
     <state x="549" y="167" width="438" height="478" key="FileChooserDialogImpl/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1578337482232" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1579127310356" />
-    <state width="1492" height="159" key="GridCell.Tab.0.bottom" timestamp="1579388043097">
+    <state width="745" height="159" key="GridCell.Tab.0.bottom" timestamp="1579812079732">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="159" key="GridCell.Tab.0.bottom/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1579361868628" />
-    <state width="1492" height="159" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579388043097" />
-    <state width="1492" height="159" key="GridCell.Tab.0.center" timestamp="1579388043097">
+    <state width="1492" height="159" key="GridCell.Tab.0.bottom/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1579710619701" />
+    <state width="745" height="159" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579812079732" />
+    <state width="745" height="159" key="GridCell.Tab.0.center" timestamp="1579812079732">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="159" key="GridCell.Tab.0.center/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1579361868628" />
-    <state width="1492" height="159" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579388043097" />
-    <state width="1492" height="159" key="GridCell.Tab.0.left" timestamp="1579388043097">
+    <state width="1492" height="159" key="GridCell.Tab.0.center/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1579710619701" />
+    <state width="745" height="159" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579812079732" />
+    <state width="745" height="159" key="GridCell.Tab.0.left" timestamp="1579812079732">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="159" key="GridCell.Tab.0.left/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1579361868628" />
-    <state width="1492" height="159" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579388043097" />
-    <state width="1492" height="159" key="GridCell.Tab.0.right" timestamp="1579388043097">
+    <state width="1492" height="159" key="GridCell.Tab.0.left/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1579710619701" />
+    <state width="745" height="159" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579812079732" />
+    <state width="745" height="159" key="GridCell.Tab.0.right" timestamp="1579812079732">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="159" key="GridCell.Tab.0.right/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1579361868628" />
-    <state width="1492" height="159" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579388043097" />
+    <state width="1492" height="159" key="GridCell.Tab.0.right/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1579710619701" />
+    <state width="745" height="159" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579812079732" />
     <state width="1492" height="239" key="GridCell.Tab.1.bottom" timestamp="1577388008849">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -298,11 +313,11 @@
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1577632607030" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1576325710223" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1579386749046">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1579809410560">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1579224038334" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1579386749046" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1579709434220" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1579809410560" />
     <state x="453" y="0" width="629" height="824" key="find.popup" timestamp="1576960874880">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
